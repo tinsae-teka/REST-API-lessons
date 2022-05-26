@@ -1,0 +1,21 @@
+get  http://localhost:8080
+
+###
+get  http://localhost:8080/transactions
+
+###
+// GET A SINGE TRANSACTION DETAIL
+get  http://localhost:8080/transaction/4
+
+###
+
+post  http://localhost:8080/transactions
+Content-Type: application/json
+
+{
+  
+  "acc_n0": "0002525555225"
+  //"balance": "25000",
+  //"amount": "15000",
+  //currency": "ETB"
+}
